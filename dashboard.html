@@ -128,12 +128,12 @@
         <a href="#" class="nav-link" id="taskSidebar"><i class="fas fa-tasks me-2"></i>Task</a>
         <a href="#" class="nav-link"><i class="fas fa-users me-2"></i>Group</a>
         <div class="sidebar-title mt-4 mb-2">Friends</div>
-        <div class="d-flex align-items-center mb-2 friend-item" data-name="Bayas Makpie" data-img="https://randomuser.me/api/portraits/men/32.jpg" data-email="bayas.makpie@email.com" data-location="London, UK"><img src="https://randomuser.me/api/portraits/men/32.jpg" class="mentor-pic"> Bayas Makpie</div>
-        <div class="d-flex align-items-center mb-2 friend-item" data-name="Shorany" data-img="https://randomuser.me/api/portraits/women/44.jpg" data-email="shorany@email.com" data-location="Paris, France"><img src="https://randomuser.me/api/portraits/women/44.jpg" class="mentor-pic"> Shorany</div>
-        <div class="d-flex align-items-center mb-2 friend-item" data-name="Joan Yosan" data-img="https://randomuser.me/api/portraits/men/45.jpg" data-email="joan.yosan@email.com" data-location="Berlin, Germany"><img src="https://randomuser.me/api/portraits/men/45.jpg" class="mentor-pic"> Joan Yosan</div>
-        <div class="d-flex align-items-center mb-2 friend-item" data-name="Alex Turner" data-img="https://randomuser.me/api/portraits/men/46.jpg" data-email="alex.turner@email.com" data-location="New York, USA"><img src="https://randomuser.me/api/portraits/men/46.jpg" class="mentor-pic"> Alex Turner</div>
-        <div class="d-flex align-items-center mb-2 friend-item" data-name="Priya Sharma" data-img="https://randomuser.me/api/portraits/women/47.jpg" data-email="priya.sharma@email.com" data-location="Mumbai, India"><img src="https://randomuser.me/api/portraits/women/47.jpg" class="mentor-pic"> Priya Sharma</div>
-        <div class="d-flex align-items-center mb-2 friend-item" data-name="Michael Chen" data-img="https://randomuser.me/api/portraits/men/48.jpg" data-email="michael.chen@email.com" data-location="Beijing, China"><img src="https://randomuser.me/api/portraits/men/48.jpg" class="mentor-pic"> Michael Chen</div>
+        <div class="d-flex align-items-center mb-2 friend-item" data-name="Bayas Makpie" data-img="https://randomuser.me/api/portraits/men/32.jpg" data-email="bayas.makpie@email.com" data-location="London, UK"> Bayas Makpie</div>
+        <div class="d-flex align-items-center mb-2 friend-item" data-name="Shorany" data-img="https://randomuser.me/api/portraits/women/44.jpg" data-email="shorany@email.com" data-location="Paris, France"> Shorany</div>
+        <div class="d-flex align-items-center mb-2 friend-item" data-name="Joan Yosan" data-img="https://randomuser.me/api/portraits/men/45.jpg" data-email="joan.yosan@email.com" data-location="Berlin, Germany"> Joan Yosan</div>
+        <div class="d-flex align-items-center mb-2 friend-item" data-name="Alex Turner" data-img="https://randomuser.me/api/portraits/men/46.jpg" data-email="alex.turner@email.com" data-location="New York, USA"> Alex Turner</div>
+        <div class="d-flex align-items-center mb-2 friend-item" data-name="Priya Sharma" data-img="https://randomuser.me/api/portraits/women/47.jpg" data-email="priya.sharma@email.com" data-location="Mumbai, India"> Priya Sharma</div>
+        <div class="d-flex align-items-center mb-2 friend-item" data-name="Michael Chen" data-img="https://randomuser.me/api/portraits/men/48.jpg" data-email="michael.chen@email.com" data-location="Beijing, China"> Michael Chen</div>
       </div>
       <div>
         <div class="sidebar-title mb-2">Settings</div>
@@ -152,21 +152,15 @@
             <span id="notifDot" style="display:none;position:absolute;top:2px;right:10px;width:12px;height:12px;background:#2563eb;border-radius:50%;border:2px solid #fff;"></span>
           </div>
           <div id="profileSection" style="cursor:pointer;display:flex;align-items:center;gap:8px;" data-bs-toggle="modal" data-bs-target="#profileModal">
-            <img src="https://randomuser.me/api/portraits/men/12.jpg" class="profile-pic">
             <span class="fw-bold" id="sidebarProfileName">Jason Ranzi</span>
           </div>
         </div>
       </div>
-      <!-- Course Card -->
-      <div class="card-course mb-4">
-        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between">
-          <div>
-            <div class="fs-5 fw-bold mb-2">Sharpen Your Skills with Professional Online Courses</div>
-            <button class="btn btn-light text-primary fw-bold px-4 py-2 mt-2">Join Now</button>
-          </div>
-          <div class="d-none d-md-block">
-            <img src="https://img.freepik.com/free-vector/online-courses-tutorials_23-2148573636.jpg?w=400" style="max-width:180px;border-radius:1rem;">
-          </div>
+      <!-- PeerConnect Bar -->
+      <div class="mb-4">
+        <div class="peerconnect-bar d-flex align-items-center justify-content-between p-3 rounded shadow" style="background: linear-gradient(90deg, #0ea5e9 60%, #38bdf8 100%); color: #fff;">
+          <div class="fw-bold fs-5"><i class="fas fa-users me-2"></i>PeerConnect: Connect & Collaborate with Your Peers!</div>
+          <button class="btn btn-light text-primary fw-bold px-4 py-2" onclick="window.location.href='group.html'">Go to PeerConnect</button>
         </div>
       </div>
       <!-- Categories -->
@@ -307,7 +301,7 @@
     <!-- Right Sidebar: Stats & Mentor -->
     <div class="d-none d-xl-block" style="width:320px;padding:32px 16px 0 0;">
       <div class="stat-card mb-4 text-center">
-        <img src="https://randomuser.me/api/portraits/men/12.jpg" class="profile-pic mb-2" style="width:60px;height:60px;">
+        <img src="https://randomuser.me/api/portraits/men/12.jpg" class="profile-pic mb-2" style="width:60px;height:60px;display:none;">
         <div class="fw-bold">Good Morning, <span id="dashboardGreetingName">Jason</span> <span style="font-size:1.2em;">🔥</span></div>
         <div class="text-muted small mb-2">Continue learning and accomplish your goal!</div>
         <div class="d-flex align-items-end justify-content-center gap-2 mt-3">
@@ -325,7 +319,6 @@
       <div class="stat-card mb-4">
         <div class="fw-bold mb-2">Your Mentor</div>
         <div class="d-flex align-items-center mb-2">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="mentor-pic">
           <div>
             <div class="fw-bold">Pashang Sario</div>
             <div class="text-muted small">24 Lessons</div>
@@ -333,7 +326,6 @@
           <button class="btn btn-outline-primary btn-sm ms-auto">Follow</button>
         </div>
         <div class="d-flex align-items-center mb-2">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="mentor-pic">
           <div>
             <div class="fw-bold">Shorany</div>
             <div class="text-muted small">18 Lessons</div>
@@ -341,7 +333,6 @@
           <button class="btn btn-outline-primary btn-sm ms-auto">Follow</button>
         </div>
         <div class="d-flex align-items-center mb-2">
-          <img src="https://randomuser.me/api/portraits/men/45.jpg" class="mentor-pic">
           <div>
             <div class="fw-bold">Leonard Samuel</div>
             <div class="text-muted small">12 Lessons</div>
@@ -436,7 +427,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
-          <img src="https://randomuser.me/api/portraits/men/12.jpg" class="profile-pic mb-2" style="width:70px;height:70px;">
+          <img src="https://randomuser.me/api/portraits/men/12.jpg" class="profile-pic mb-2" style="width:70px;height:70px;display:none;">
           <h5 class="fw-bold mb-1" id="modalProfileName">Name</h5>
           <div class="mb-1"><strong>Age:</strong> <span id="modalProfileAge">28</span></div>
           <div class="mb-1"><strong>Address:</strong> <span id="modalProfileAddress">123 Main Street, New York, NY</span></div>
@@ -482,7 +473,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
-          <img id="friendModalImg" src="" class="profile-pic mb-2" style="width:70px;height:70px;">
+          <img id="friendModalImg" src="" class="profile-pic mb-2" style="width:70px;height:70px;display:none;">
           <h5 class="fw-bold mb-1" id="friendModalName"></h5>
           <div class="mb-1"><strong>Email:</strong> <span id="friendModalEmail"></span></div>
           <div class="mb-1"><strong>Location:</strong> <span id="friendModalLocation"></span></div>
